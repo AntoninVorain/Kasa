@@ -1,0 +1,26 @@
+@use "../scss/variables.scss" as colors;
+
+.banner{
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding-inline: 0 2rem;
+  background-image: url("https://www.jotform.com/blog/wp-content/uploads/2015/10/pexels-photo.jpg");
+  min-height: 140px;
+  margin: auto;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  color: colors.$color-tertiary;
+  margin-bottom: 2rem;
+  max-width: 100%;
+}
+
+.banner::before{
+  position: absolute;
+  border-radius: 2rem;
+  content: "";
+  inset:0;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  opacity: 0.5;
+}
