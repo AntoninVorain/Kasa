@@ -1,7 +1,7 @@
 import React from "react"
 import "./DescriptionPanel.scss"
 
-export function DescriptionPanel() {
+export function DescriptionPanel({title, description}) {
   return (
     <div className="description__panel">
       <p className="description__header">
