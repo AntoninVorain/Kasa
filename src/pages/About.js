@@ -9,12 +9,12 @@ function About() {
   return (
     <>
       <Navbar />
-      <ImageBanner />
+      <ImageBanner imageUrl={} />
       <div className="about__container">
-        <DescriptionPanel title=" " description="" />
-        <DescriptionPanel title=" " description="" />
-        <DescriptionPanel title=" " description="" />
-        <DescriptionPanel title=" " description="" />
+        <DescriptionPanel title="1" description="" />
+        <DescriptionPanel title="2" description="" />
+        <DescriptionPanel title="3" description="" />
+        <DescriptionPanel title="4" description="" />
       </div>
       <Footer />
     </>
