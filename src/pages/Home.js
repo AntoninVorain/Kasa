@@ -9,14 +9,14 @@ import Footer from "../components/Footer";
 export default function Home() {
   const [apartments, setApartments] = useState([])
 
-  useEffect(() => {
-    fetch("./data/logements.json")
-      .then((response) => response.json())
-      .then((datas) => {
-        console.log(datas)
-        setApartments(datas)
-      }).catch((error)=>console.log(error))
-  },[])
+  // useEffect(() => {
+  //   fetch("./data/logements.json")
+  //     .then((response) => response.json())
+  //     .then((datas) => {
+  //       console.log(datas)
+  //       setApartments(datas)
+  //     }).catch((error)=>console.log(error))
+  // },[])
 
 
   return (
@@ -26,6 +26,7 @@ export default function Home() {
       <Main>
         <Banner title="Chez vous, partout et ailleurs" />
         {/* <ApartmentGrid /> boucle */}
+        <ApartmentGrid />
         {apartments.map((apartment) => (
           <div className="user">
             <h2>{apartment.title}</h2>
