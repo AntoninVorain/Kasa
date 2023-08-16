@@ -27,7 +27,7 @@
       order: 1;
     }
   }
-  .apartment__owner__badge {
+  .apartment__owner__badge img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -38,14 +38,12 @@
     justify-content: center;
     align-items: center;
     gap: 0.2rem;
+    color: $background-dark;
     * {
       font-size: 2rem;
     }
     .on {
       color: $color-primary;
-    }
-    .off {
-      color: $color-tertiary;
     }
   }
   h1 {

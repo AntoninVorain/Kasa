@@ -17,7 +17,7 @@ function fetchApartments() {
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-        <ApartmentCard title={apartment.title} imageUrl={apartment.cover} />
+        <ApartmentCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />
       ))}
       {/* apartments: {JSON.stringify(apartments)} */}
       {/* 

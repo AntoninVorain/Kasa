@@ -3,9 +3,8 @@ import "./ApartmentCard.scss"
 import { Link } from "react-router-dom"
 
 function ApartmentCard(props) {
-  console.log("props dans apartmentCard: ", props)
   return (
-    <Link to='/flat'>
+    <Link to='/flat' state={{apartmentId : props.id}}>
       <div className="apartment">
         <img className="apartment__card__image" src={props.imageUrl} alt="" />
         <div className="apartment__subtitle">{props.title}</div>

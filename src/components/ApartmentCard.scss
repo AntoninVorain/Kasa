@@ -16,6 +16,7 @@
     object-fit: cover;
     border-radius: 1rem;
     box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+    filter: brightness(0.8);
   }
   // background-image: linear-gradient(to top, $color-primary, $color-secondary);
   @media screen and (width<=768px){
