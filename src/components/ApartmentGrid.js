@@ -5,7 +5,10 @@ import "./ApartmentGrid.scss";
 function ApartmentGrid() {
   const [apartments, setApartments] = useState([])
 
-  useEffect(fetchApartments, [])
+  useEffect(() => {
+    fetchApartments()
+    
+  }, [])
 
 function fetchApartments() {
   fetch("./data/logements.json")
@@ -17,7 +20,7 @@ function fetchApartments() {
   return (
     <div className="grid">
       {apartments.map((apartment) => (
-        <ApartmentCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id} />
+        <ApartmentCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id} key={apartment.id} />
       ))}
       {/* apartments: {JSON.stringify(apartments)} */}
       {/* 

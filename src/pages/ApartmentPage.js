@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./ApartmentPage.scss";
-import { DescriptionPanel } from "./DescriptionPanel";
-import { ImageBanner } from "./ImageBanner";
-import { ApartmentHeader } from "./ApartmentHeader";
+import { DescriptionPanel } from "./../components/DescriptionPanel";
+import { ImageBanner } from "./../components/ImageBanner";
+import { ApartmentHeader } from "./../components/ApartmentHeader";
 import { useLocation } from "react-router-dom";
 
 function ApartmentPage() {
@@ -24,14 +24,14 @@ function ApartmentPage() {
   if(flat == null) return <div>loading...</div>
   return (
     <div className="apartment-page">
-      <ImageBanner imageUrl={flat.cover} />      
+      <ImageBanner pictures={flat.pictures} />      
       <ApartmentHeader flat={flat} />
       <div className="apartment__description__area">
         <DescriptionPanel title="Description" desc={flat.description} />
         <DescriptionPanel
           title="Equipements"
-          desc={flat.equipments.map((eq) =>(
-            <li>{eq}</li>
+          desc={flat.equipments.map((eq, i) =>(
+            <li key={i}>{eq}</li>
           ))}
         />
       </div>

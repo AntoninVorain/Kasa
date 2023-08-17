@@ -3,18 +3,21 @@ import "./DescriptionPanel.scss"
 
 export function DescriptionPanel(props) {
   const [isContentVisible, setIsContentVisible] = useState(false);
+  
   const showContent = () => {
     setIsContentVisible(!isContentVisible)
   }
-  const contentClass = isContentVisible ? "" : "hidden"
+  const contentClass = (isContentVisible ? "visible" : "hidden") + " description__content"
+  const chevronClass = (isContentVisible ? "fa-chevron-up" : "fa-chevron-down") + " fas"
+
   return (
     <div className="description__panel">
-      <p className="description__header">
+      <p className="description__header" onClick={showContent}>
         <span>{props.title}</span>
-        <i className="fa-solid fa-chevron-up" onClick={showContent}></i>
+        <i className={chevronClass}></i>
       </p>
-      {isContentVisible ? "visible" : "hidden"}
-      <p className="description__content">{props.desc}</p>
+      
+      <p className={contentClass}>{props.desc}</p>
     </div>
   );
 }

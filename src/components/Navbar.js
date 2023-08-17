@@ -1,16 +1,20 @@
 import React from "react";
-import { NavLink } from "react-router-dom"
+import { NavLink } from "react-router-dom";
 import "./Navbar.scss";
 function Navbar() {
   return (
-    <nav className="Navbar">
-        <NavLink to="/">
-          <div className="navbar__logo">
+    <nav className="navbar">
+      <NavLink to="/">
+        <div className="navbar__logo">
           <img src="img/logo.png" alt="Logo" />
-          </div>
-        </NavLink>
-        <NavLink to="/"><div>Accueil</div></NavLink>
-        <NavLink to="/about"><div>A propos</div></NavLink>
+        </div>
+      </NavLink>
+      <NavLink to="/">
+        <div>Accueil</div>
+      </NavLink>
+      <NavLink to="/about">
+        <div>A propos</div>
+      </NavLink>
     </nav>
   );
 }
