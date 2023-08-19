@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import { ImageBanner } from "../components/ImageBanner";
+import { Banner } from "../components/Banner";
 import { DescriptionPanel } from "../components/DescriptionPanel";
 import "./About.scss";
 import Footer from "../components/Footer";
@@ -10,11 +11,12 @@ function About() {
     <>
       <Navbar />
       <ImageBanner />
+      <Banner title="Chez vous, partout et ailleurs" />
       <div className="about__container">
-        <DescriptionPanel title="Fiabilité" desc="C'est très important" />
-        <DescriptionPanel title="Respect" desc="C'est très important" />
-        <DescriptionPanel title="Service" desc="C'est très important" />
-        <DescriptionPanel title="Responsabilité" desc="C'est très important" />
+        <DescriptionPanel title="Fiabilité" desc="Fiabilité" />
+        <DescriptionPanel title="Respect" desc="Respect" />
+        <DescriptionPanel title="Service" desc="Service" />
+        <DescriptionPanel title="Responsabilité" desc="Responsabilité" />
       </div>
       <Footer />
     </>

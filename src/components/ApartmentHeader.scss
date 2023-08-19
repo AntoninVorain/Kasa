@@ -8,7 +8,7 @@
     flex-direction: column;
   }
 
-  .apartment-title {
+  .apartment__title {
     flex-grow: 1;
   }
   .apartment__owner{
@@ -52,8 +52,8 @@
   }
   h2 {
     font-weight: 400;
-    margin-top: 0.5rem;
-    margin-bottom: 0.2rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
     font-size: 20px;
   }
     
