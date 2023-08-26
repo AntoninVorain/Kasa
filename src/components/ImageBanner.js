@@ -28,11 +28,18 @@ export function ImageBanner(props) {
     return pictures && pictures.length > 0;
   };
 
+  // console.log(pictures.length === 1)
+  
+  const singlePicture = () => {
+    return (pictures.length === 1);
+  };
+
+  // console.log({ arePicturesAvailable() && singlePicture() })
+
+
   const getCarouselOrDefaultImage = () => {
     if (!arePicturesAvailable()) {
-      return (
-        <img src="https://picsum.photos/800" className="show" alt="" />
-      );
+      return <img src="https://picsum.photos/800" className="show" alt="" />;
     }
     return pictures.map((pic, i) => (
       <img key={pic} src={pic} alt="" className={getClassName(i)}></img>
@@ -42,13 +49,13 @@ export function ImageBanner(props) {
   return (
     <div className="image__banner">
       <div className="image__container">{getCarouselOrDefaultImage()}</div>
-      {arePicturesAvailable() && (
+      {(arePicturesAvailable() || !singlePicture()) && (
         <>
           <button className="btn btn-previous" onClick={moveToPrevious}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <span className="slide-counter">
-           {currentPicture + 1} / {pictures.length}
+            {currentPicture + 1} / {pictures.length}
           </span>
           <button className="btn btn-next" onClick={moveToNext}>
             <i className="fas fa-chevron-right"></i>

@@ -10,13 +10,14 @@ export function useApartment() {
     fetch("./data/logements.json", { signal: abortController.signal })
       .then((res) => res.json())
       .then((flats) => {
+        console.log(location.state)
         const flat = flats.find((flat) => flat.id === location.state.apartmentId);
         setFlat(flat);
       })
       .catch(console.error);
-    return () => {
-      abortController.abort();
-    };
+    // return () => {
+    //   abortController.abort();
+    // };
   }, []);
   return flat;
 }

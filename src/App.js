@@ -4,17 +4,21 @@ import About from "./pages/About"
 import ErrorPageNotFound from "./pages/ErrorPageNotFound"
 import "./App.scss"
 import ApartmentPage from "./pages/ApartmentPage";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/flat" element={<ApartmentPage />} />
         <Route path="*" element={<ErrorPageNotFound />} />
       </Routes>
-    </BrowserRouter> 
+      <Footer />
+    </>
   );
 }
 

@@ -18,7 +18,7 @@ function ApartmentPage() {
         <DescriptionPanel
           title="Equipements"
           desc={flat.equipments.map((eq, i) => (
-            <li key={i}>{eq}</li>
+            <div key={i}>{eq}</div>
           ))}
         />
       </div>

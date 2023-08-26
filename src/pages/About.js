@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 function About() {
   return (
     <>
-      <Navbar />
       <ImageBanner />
       <Banner title="Chez vous, partout et ailleurs" />
       <div className="about__container">
@@ -18,7 +17,6 @@ function About() {
         <DescriptionPanel title="Service" desc="Service" />
         <DescriptionPanel title="Responsabilité" desc="Responsabilité" />
       </div>
-      <Footer />
     </>
   );
 }

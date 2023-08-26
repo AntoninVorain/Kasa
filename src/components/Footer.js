@@ -4,7 +4,6 @@ import "./Footer.scss";
 function Footer() {
   return (
     <div className="footer">
-      Footer
       <div className="footer__logo">
         <img src="./img/logo-black.png" alt="logo" />
       </div>

@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 function ErrorPageNotFound() {
   return (
     <>
-      <Navbar />
       <Main>
         <div className="error-page">
           <h1>404</h1>

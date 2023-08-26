@@ -22,7 +22,6 @@ export default function Home() {
   return (
     
       <div>
-      <Navbar />
       <Main>
         <Banner title="Chez vous, partout et ailleurs" />
         {/* <ApartmentGrid /> boucle */}
@@ -33,8 +32,6 @@ export default function Home() {
           </div>
       ))}
       </Main>
-      <Footer />
-    
     </div>
   )
 }

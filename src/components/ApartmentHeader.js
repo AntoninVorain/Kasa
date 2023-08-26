@@ -22,8 +22,9 @@ export function ApartmentHeader({ flat }) {
             <span>{firstName}</span>
             <span>{lastName}</span>
           </h3>
-          <div className="apartment__owner__badge"></div>
+          <div className="apartment__owner__badge">
             <img src={flat.host.picture} alt="" />
+          </div>
         </div>
         <div className="apartment__owner__stars">
 
