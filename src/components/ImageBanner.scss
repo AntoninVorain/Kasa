@@ -32,6 +32,11 @@
     bottom: 1rem;
     text-align: center;
   }
+  @media screen and (width<=768px){
+    .slide-counter{
+      display:none;
+    }
+  }
   .image__container {
     width: 100%;
     height: 20rem;

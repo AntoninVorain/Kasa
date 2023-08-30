@@ -31,7 +31,7 @@ export function ImageBanner(props) {
   // console.log(pictures.length === 1)
   
   const singlePicture = () => {
-    return (pictures.length === 1);
+    return pictures && (pictures.length === 1);
   };
 
   // console.log({ arePicturesAvailable() && singlePicture() })
@@ -49,7 +49,8 @@ export function ImageBanner(props) {
   return (
     <div className="image__banner">
       <div className="image__container">{getCarouselOrDefaultImage()}</div>
-      {(arePicturesAvailable() || !singlePicture()) && (
+      {/* {(arePicturesAvailable() || !singlePicture()) && ( */}
+      {!singlePicture() && (
         <>
           <button className="btn btn-previous" onClick={moveToPrevious}>
             <i className="fas fa-chevron-left"></i>

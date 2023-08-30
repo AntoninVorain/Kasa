@@ -6,7 +6,11 @@ function Navbar() {
     <nav className="navbar">
       <NavLink to="/">
         <div className="navbar__logo">
-          <img src="img/logo.png" alt="Logo" id="logo" />
+          <picture>
+            <source media="(max-width: 768px)" srcset="img/LOGO-145.png" />
+            <img src="/img/LOGO.png" alt="logo" />
+          </picture>
+          {/* <img src="img/logo.png" alt="Logo" id="logo" /> */}
         </div>
       </NavLink>
       <NavLink to="/">

@@ -27,7 +27,7 @@ function fetchApartments() {
       <ApartmentCard />
       <ApartmentCard />
       <ApartmentCard /> */}
-      {/* <ApartmentCard title="super appart dans le marais" />
+      {/* <ApartmentCard title="le marais" />
       <ApartmentCard title="16e" />
       <ApartmentCard title="18e" /> */}
     </div>
