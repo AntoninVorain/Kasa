@@ -4,7 +4,6 @@ import { Banner } from "../components/Banner";
 import ApartmentGrid from "../components/ApartmentGrid";
 import Main from "../components/Main";
 import Footer from "../components/Footer";
-// import "./App.scss";
 
 export default function Home() {
   const [apartments, setApartments] = useState([])
