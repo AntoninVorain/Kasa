@@ -1,22 +1,23 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import { ImageBanner } from "../components/ImageBanner";
-import { Banner } from "../components/Banner";
+import { BannerAbout } from "../components/BannerAbout";
 import { DescriptionPanel } from "../components/DescriptionPanel";
-import "./About.scss";
+import Main from "../components/Main";
 import Footer from "../components/Footer";
+import "./About.scss";
 
 function About() {
   return (
     <>
-      <ImageBanner />
-      <Banner title="Chez vous, partout et ailleurs" />
+      <Main>
+      <BannerAbout />
       <div className="about__container">
         <DescriptionPanel title="Fiabilité" desc="Fiabilité" />
         <DescriptionPanel title="Respect" desc="Respect" />
         <DescriptionPanel title="Service" desc="Service" />
         <DescriptionPanel title="Responsabilité" desc="Responsabilité" />
-      </div>
+        </div>
+      </Main>
     </>
   );
 }

@@ -5,26 +5,6 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 
 
-// const router = createBrowserRouter([
-//   {
-//   path: "/",
-//     element: <App />,
-//   errorElement: <h1>404 not found</h1>
-// },
-// {
-//   path: "/flat",
-//   element: <h1>Nos appartements</h1>
-//   },
-// {
-//   path: "/about",
-//   element: <About />
-//   },
-//   {
-//   path: "/flat",
-//   element: <ApartmentPage />
-// }
-// ])
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

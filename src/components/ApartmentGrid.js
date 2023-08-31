@@ -22,14 +22,6 @@ function fetchApartments() {
       {apartments.map((apartment) => (
         <ApartmentCard title={apartment.title} imageUrl={apartment.cover} id={apartment.id} key={apartment.id} />
       ))}
-      {/* apartments: {JSON.stringify(apartments)} */}
-      {/* 
-      <ApartmentCard />
-      <ApartmentCard />
-      <ApartmentCard /> */}
-      {/* <ApartmentCard title="le marais" />
-      <ApartmentCard title="16e" />
-      <ApartmentCard title="18e" /> */}
     </div>
   );
 }

@@ -9,16 +9,6 @@ import Footer from "../components/Footer";
 export default function Home() {
   const [apartments, setApartments] = useState([])
 
-  // useEffect(() => {
-  //   fetch("./data/logements.json")
-  //     .then((response) => response.json())
-  //     .then((datas) => {
-  //       console.log(datas)
-  //       setApartments(datas)
-  //     }).catch((error)=>console.log(error))
-  // },[])
-
-
   return (
     
       <div>
