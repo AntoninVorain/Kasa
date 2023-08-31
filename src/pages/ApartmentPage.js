@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./ApartmentPage.scss";
 import { DescriptionPanel } from "./../components/DescriptionPanel";
 import { ImageBanner } from "./../components/ImageBanner";
@@ -16,7 +16,7 @@ function ApartmentPage() {
       <div className="apartment__description__area">
         <DescriptionPanel title="Description" desc={flat.description} />
         <DescriptionPanel
-          title="Equipements"
+          title="Équipements"
           desc={flat.equipments.map((eq, i) => (
             <div key={i}>{eq}</div>
           ))}
